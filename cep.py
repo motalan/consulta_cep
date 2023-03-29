@@ -24,7 +24,9 @@ def consulta_cep(x):
 
     return resultado
 
-    
+chamados = True
+
+
 #Comando para manter o programa rodando
 while chamados:
 
@@ -32,7 +34,7 @@ while chamados:
     opcao = input('Escolha o que deseja executar:\n[1] - Consulta CEP\n[2] - Sair\n ')
     
     #Direciona o usuario para a opcao desejada
-    if opcao == 1:
+    if opcao == '1':
             
             #Captura o CEP para ser consultado
             cep_input = input('Digite o CEP que deseja consultar: ')
@@ -42,7 +44,7 @@ while chamados:
                  print('CEP Inválido')
                  continue
     #Executa a opção 2 de sair
-    elif opcao == 2:
+    elif opcao == '2':
          print('Até a próxima')
          chamados = False
     #Caso o valor digitado não for nem 1 nem 2     
